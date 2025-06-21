@@ -23,12 +23,12 @@ fun readNumber(prompt: String = "Введите число: "): Int? {
 }
 
 fun summOfNumbers(numbersArray: Array<Int>): Int {
-    var sum =0;
-    for(number in numbersArray) {
+    var sum = 0;
+    for (number in numbersArray) {
         if (number > 10) {
             sum += number
         }
-        if(number <0) {
+        if (number < 0) {
             println("Обнаружено отрицательное число ($number). Текущая сумма: $sum")
             return sum
         }

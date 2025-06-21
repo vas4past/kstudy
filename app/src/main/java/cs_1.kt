@@ -6,15 +6,11 @@
  */
 fun main() {
     val a = 0;
-    if (a > 0)
-    {
+    if (a > 0) {
         println("Число А положительное")
-    }
-    else if (a < 0)
-    {
+    } else if (a < 0) {
         println("Число А отрицательное")
-    }
-    else println("Число А это ноль")
+    } else println("Число А это ноль")
 
     val x = -4
     when (x) {

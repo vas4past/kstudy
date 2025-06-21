@@ -1,4 +1,5 @@
 @file:Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE")
+
 /*
 Задание 1: Создайте функцию maxOfTwo, которая принимает два числа в качестве аргументов и возвращает наибольшее число.
 Затем, используйте эту функцию для поиска максимального числа из двух разных пар чисел.
@@ -16,12 +17,11 @@
 выполнения различных операций над этим списком (например, добавьте имя, удалите имя, переверните список и т. д.).
 */
 // Задание 1
-fun maxOfTwo (num1: Int, num2: Int): Int {
+fun maxOfTwo(num1: Int, num2: Int): Int {
     var x = 0
     if (num1 > num2) {
-         x = num1
-    }
-    else if (num1 < num2) {
+        x = num1
+    } else if (num1 < num2) {
         x = num2
     }
     println("Наибольшее число: $x")
@@ -30,7 +30,7 @@ fun maxOfTwo (num1: Int, num2: Int): Int {
 
 // Задание 2
 fun sayHello(name: String = "мир") {
-    println( "Привет, $name!")
+    println("Привет, $name!")
 }
 
 // Задание 3
@@ -39,12 +39,16 @@ infix fun Int.isGreater(other: Int): Boolean {
 }
 
 // Задание 4
-tailrec fun generateSequence(n: Int, x: Int = 1, result: MutableList<Int> = mutableListOf()): List<Int> {
+tailrec fun generateSequence(
+    n: Int,
+    x: Int = 1,
+    result: MutableList<Int> = mutableListOf()
+): List<Int> {
     return if (x > n) {
         result
     } else {
         result.add(x)
-        generateSequence(n, x+1, result)
+        generateSequence(n, x + 1, result)
     }
 }
 
@@ -75,7 +79,7 @@ fun main() {
         println("Имена до добавления: $it")
         names.add("Таня")
     }
-    with(names){
+    with(names) {
         println("Список имен: $this")
         add("Аня")
     }
