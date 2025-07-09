@@ -3,7 +3,7 @@ package oophomework
 import android.os.Parcel
 import android.os.Parcelable
 
-//Создайте класс Car с полями model, color, year и методом drive(). Создайте несколько объектов этого класса и вызовите их метод drive().
+// Создайте класс Car с полями model, color, year и методом drive(). Создайте несколько объектов этого класса и вызовите их метод drive().
 class Car(val model: String, val color: String, val year: Int) {
     fun drive() {
         println("Машина $model цвета $color $year года едет.")
